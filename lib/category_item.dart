@@ -5,12 +5,15 @@ import './category_meals_screen.dart';
 class CategoryItem extends StatelessWidget {
   final String title;
   final Color color;
+  final String id;
 
-  const CategoryItem(this.title, this.color);
+  const CategoryItem(this.id, this.title, this.color);
 
   void _selectCategory(BuildContext ctx) {
+    // ignore: todo
+    // TODO: does this get cleaned up? Get popped?
     Navigator.of(ctx).push(MaterialPageRoute(builder: (_) {
-      return CategoryMealsScreen();
+      return CategoryMealsScreen(id, title);
     }));
   }
 
