@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import './screens/categories_screen.dart';
 import './screens/category_meals_screen.dart';
+import './screens/meal_detail_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -30,9 +31,10 @@ class MyApp extends StatelessWidget {
         ),
         initialRoute: '/',
         routes: {
-          '/': (context) => CategoriesScreen(),
+          '/': (ctx) => CategoriesScreen(),
           CategoryMealsScreen.routeName: (ctx) =>
               CategoryMealsScreen(), //get value of routeName, use that as static value (line "home above") and then point to "CategoryMealsScreen"
+          MealDetailScreen.routeName: (ctx) => MealDetailScreen(),
         });
   }
 }
