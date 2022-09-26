@@ -46,10 +46,11 @@ class MyApp extends StatelessWidget {
       //   );
       // }),
       onUnknownRoute: (settings) {
+        // similar to a 404
         return MaterialPageRoute(
           builder: (ctx) => CategoriesScreen(),
         );
-      }, // 404
+      },
     );
   }
 }
