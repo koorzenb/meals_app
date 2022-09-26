@@ -12,7 +12,7 @@ class CategoryItem extends StatelessWidget {
   void _selectCategory(BuildContext ctx) {
     // ignore: todo
     // TODO: does this get cleaned up? Get popped?
-    Navigator.of(ctx).pushNamed('/categories-meals', arguments: {
+    Navigator.of(ctx).pushNamed(CategoryMealsScreen.routeName, arguments: {
       'id': id,
       'title': title,
     });

@@ -28,9 +28,11 @@ class MyApp extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               )),
         ),
-        home: CategoriesScreen(),
+        initialRoute: '/',
         routes: {
-          '/categories-meals': (ctx) => CategoryMealsScreen(),
+          '/': (context) => CategoriesScreen(),
+          CategoryMealsScreen.routeName: (ctx) =>
+              CategoryMealsScreen(), //get value of routeName, use that as static value (line "home above") and then point to "CategoryMealsScreen"
         });
   }
 }
