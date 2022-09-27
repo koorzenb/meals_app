@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../screens/filters_screen.dart';
 import '../screens/tabs_screen.dart';
 import './screens/categories_screen.dart';
 import './screens/category_meals_screen.dart';
@@ -36,6 +37,7 @@ class MyApp extends StatelessWidget {
         CategoryMealsScreen.routeName: (ctx) =>
             CategoryMealsScreen(), //get value of routeName, use that as static value (line "home above") and then point to "CategoryMealsScreen"
         MealDetailScreen.routeName: (ctx) => MealDetailScreen(),
+        FiltersScreen.routeName: (ctx) => FiltersScreen(),
       },
       // onGenerateRoute: ((settings) { // if routing is generated dynamically
       //   print(settings.arguments);
